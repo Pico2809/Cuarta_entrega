@@ -1,0 +1,128 @@
+.hero_nosotros {
+    height: 48vh;
+    place-content: center;
+    background: url("../imagenes/hero/hero_nosotros.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+    display: flex;
+    flex-direction: column;
+}
+
+
+.nosotros {
+    padding: 1em;
+    margin: 1em;
+    background-color: $color-background-section;
+    border-radius: 1.5em;
+    text-align: center;
+    width: 80%;
+    min-width: 350px;
+    p {
+        font-size: 1.4rem;
+        line-height: 2em;
+        font-weight: 600;
+        margin: 1.5em;
+        text-align: center;
+    }
+}
+
+.about-us {
+    padding: 1em;
+    margin: 0.5em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+
+.experiencia{
+    padding: 1em;
+    margin: 0.5em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    &__text{
+        display: flex;
+            flex-direction: column;
+            align-items: center;
+    }
+}
+.camino{
+    padding: 1em;
+    margin: 1em;
+    text-align: center;
+    display: flex;
+        flex-direction: column;
+        li {
+            font-size: 1.2rem;
+            padding: 0.3em;
+            line-height: 2em;
+            font-weight: 600;
+            width: fit-content;
+            text-align: start;
+            list-style: square;
+        }
+        li:hover{
+            background-color:#058bce;
+        }
+}
+
+.camino__img{
+    display: none;
+}
+
+
+@media screen and (max-width:750px){
+    .sostener {
+        min-width: 400px;
+    }
+        p {
+            font-size: 1.4rem;
+            line-height: 2em;
+            font-weight: 600;
+            text-align: center;
+        }
+    
+    .about-us {
+        padding: 1em;
+        margin: 0.5em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+    }
+    
+    
+    .experiencia{
+        padding: 1em;
+        margin: 0.5em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .camino{
+        text-align: center;
+        display: flex;
+            flex-direction: column;
+            li {
+                font-size: 1.2rem;
+                padding: 0.3em;
+                line-height: 2em;
+                font-weight: 600;
+                width: fit-content;
+                text-align: start;
+                list-style: square;
+                
+            }
+    }
+    .ruta{
+        display: none;
+    }
+
+    .camino__img{
+        display: flex;
+    }
+}

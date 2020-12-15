@@ -1,0 +1,25 @@
+.more {
+    color: $color-a;
+    font-size: 1.5em;
+    padding: 0.5em 1em;
+    font-weight: 600;
+    width: fit-content;
+    cursor: pointer;
+    letter-spacing: 0.1em;
+    border-radius: 0.5em;
+    text-transform: uppercase;
+    background-color: #ff7044;
+    
+    
+    &:hover {
+        background-color: #db603a ;
+    }
+}
+
+
+@media screen and (max-width: 650px){
+    .more{
+        font-size: 1.5em;
+        font-weight: 600;
+    }
+}

@@ -1,0 +1,126 @@
+.hero_post {
+    height: 48vh;
+    place-content: center;
+    background: url("../imagenes/hero/hero_post.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.post {
+    padding: 1em;
+    margin: 0.5em;
+    border-radius: 1em;
+
+    &__container {
+        margin: 0 auto;
+        margin-bottom: 2em;
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    &__item {
+        width: 30%;
+        position: relative;
+        overflow: hidden;
+    }
+
+    &__img {
+        transition: all 0.5s;
+    }
+
+    &__text {
+        cursor: pointer;
+        position: absolute;
+        bottom: 0;
+        padding: 20px;
+        width: 100%;
+        font-size: 1.5em;
+        font-weight: 600;
+
+
+        background: rgba(0, 0, 0, 0.7);
+        text-align: center;
+
+        transform: translateY(100%);
+
+        transition: all 0.5s ease-out;
+    }
+
+    &__text h2 {
+        color: $color-a;
+    }
+
+    &__text p {
+        text-align: center;
+        font-size: 1em;
+        font-weight: 400;
+        font-style: italic;
+        color: $color-a;
+
+    }
+
+    &__item:hover .post__text {
+        transform: translateY(0%);
+    }
+
+    &__item:hover .post__img {
+        transform: scale(1.15);
+        filter: grayscale(80%);
+        box-shadow: 8px 8px 10px gray;
+    }
+}
+
+.post__text--hidden {
+    display: none;
+}
+
+
+@media screen and (max-width: 666px) {
+    .post {
+        &__container {
+            padding: 1em;
+            margin: 0.5em;
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            justify-items: center;
+        }
+
+        &__item {
+            margin: 1em;
+            width: 45%;
+            background-color: $color-a;
+            display: grid;
+                place-items: center;
+        }
+
+        &__text{
+            display: none;
+        }
+
+        &__img {
+            border-radius: 0em;
+        }
+
+
+        &__text--hidden {
+            text-align: center;
+            font-size: 2em;
+            font-weight: 400;
+            font-family: "lato";
+            color: $color-body;
+            display: flex;
+                justify-content: space-around;
+        }
+
+        &__item:hover .post__img {
+            transform: scale(1);
+            filter: grayscale(80%);
+        }
+    }
+
+
+}

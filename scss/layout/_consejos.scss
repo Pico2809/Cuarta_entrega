@@ -1,0 +1,120 @@
+.hero_consejos {
+    height: 48vh;
+    place-content: center;
+    background: url("../imagenes/hero/hero_consejos.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.app {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.consejos {
+    padding: 1em;
+    margin: 1em;
+    background-color: $color-background-section;
+    border-radius: 1.5em;
+    text-align: center;
+    width: 80%;
+    display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+
+    &__container h3 {
+        padding: 0.5em;
+        margin: 0.5em;
+        font-size: 2em;
+    }
+    
+
+    &__picture img:hover {
+        cursor: pointer;
+        transform: scale(0.95);
+        box-shadow: 8px 8px 10px gray;
+    }
+
+
+    .consejos__picture {
+        width: 20%;
+        margin: 1em;
+        border-top-left-radius: 1.5em ;
+        border-top-right-radius: 1.5em ;
+
+    }
+
+}
+.consejos__text h3 {
+    padding-top: 0.5em;
+    font-size: 1.6em;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    text-decoration: none;
+    text-transform: none;
+    color: $color-body;
+}
+.consejos__text p {
+    font-size: 1.2em;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: none;
+    color: $color-body;
+}
+
+
+
+
+
+@media screen and (max-width:854px){
+    .contenedor--complementos{
+        margin:0;
+        padding: 0.5em;
+        width: 100%;
+    }
+    .consejos {
+        padding: 1em;
+        margin: 1em;
+        background-color: $color-background-section;
+        border-radius: 1.5em;
+        text-align: center;
+        width: 100%;
+    }
+    
+    .consejos .consejos__picture {
+        width: 30%
+    }
+        
+    .app {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .plataforma {
+        display: none;
+    }
+    
+    .link {
+        background-size: contain;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+    }
+    .consejos__text p {
+        padding-top: 1em;
+        font-size: 1em;
+        font-weight: 600;
+        line-height: 1.6em;
+        color: $color-body;
+    }
+    
+}
+
