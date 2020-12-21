@@ -92,17 +92,25 @@ form {
 
 
 @media screen and (max-width:750px) {
+    .container{
+        border-bottom-left-radius: 0em;
+        border-bottom-right-radius: 0em;
+    }
+
     .container .contexto {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
     }
 
-    .contexto .right {
+    .social-media-list{
         display: flex;
-        justify-content: center;
     }
-   .social-media-list{
-        display: flex;
+   
+}
+
+@media screen and (max-width:500px) {
+    form input, textarea{
+        width: 100%;
     }
 }
